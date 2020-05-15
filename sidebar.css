@@ -1,0 +1,180 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main,
+.sidebar {
+  border: 3px solid #fcff00;
+  padding: 15px;
+  background-color: ;
+  font-size: 50px
+}
+
+.main {
+  width: 80%;
+  height: 700vh;
+}
+.h1 {
+font-family: "Lack";
+font-size: 50px
+color:  #fcff00;
+color: rgb(252,255,0);
+width: auto;
+}
+.h1:hover {
+font-family: "Lack-Line-Italic";
+font-size: 50px
+color:  #fcff00;
+color: rgb(252,255,0);
+
+}
+html {
+  cursor: url('dragonyeah.gif'), auto;
+}
+body {     cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;   }
+.happy {
+     cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+   }
+
+.sidebar {
+  width: 10%;
+  height: 25vh;
+  color:  #fcff00;
+  padding: 14px 25px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Lack";
+  font-size: 20px
+
+
+  }
+
+  /* Arrow Button
+  	-----------------------------------*/
+    .container-arrow{
+      margin-top: -10px;
+      font-weight: lighter;
+      text-transform: uppercase;
+      color:#000;
+      display: inline-block;
+      text-align: right;
+  	  line-height: 10px;
+  	  position: sticky;
+  	  bottom:0;left:0;
+  	  z-index: 10;
+  	  width:100%;
+  	  padding-bottom: 15px;
+  	  cursor: pointer;
+  	  font-size: 5px;
+  	}
+  	.container-arrow:hover,
+  	.container-arrow:focus{text-decoration: none;}
+
+  		/* Arrow Bouncing */
+  		.container-arrow span{  display: inline-block; font-size: 70px;	 animation: .7s down  infinite alternate; -webkit-animation: .7s down infinite alternate; }
+  		/***Animation Arrow down***/
+  		@keyframes down{ 0%{transform:translateY(0px)} 100%{transform:translateY(10px)} }
+  		@-webkit-keyframes down{ 0%{-webkit-transform:translateY(0px)} 100%{-webkit-transform:translateY(10px)} }
+
+
+  a:visited {
+  color:  #fcff00;
+  text-decoration: none;
+
+  outline: none
+  }
+  a:link {
+  color:  #fcff00;
+  text-decoration: none;
+
+  outline: none
+  }
+  a {
+outline: none;
+}
+
+
+  a:hover, a:active {
+  font-family: "Lack-Line-Italic";
+  position: sticky;
+  text-decoration: none;
+  outline: none
+
+
+
+  }
+  .container {
+      margin-left: auto;
+      margin-right: auto;
+      width:80%;
+
+  }
+  .container:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  .center {
+      text-align: left;
+      width: 100%;
+      padding-bottom: 16px;
+      margin-bottom: 4px;
+  }
+  .myfooter {
+    border-top: 2px solid #ff1dc7;
+    padding-bottom: 24px;
+  }
+
+  a:hover {
+    color: #fcff00;
+    text-decoration-none;
+    outline: none
+  }
+  h1:hover {
+    font-family: "Lack";
+    font-size: 80px
+    color:  #fcff00;
+    color: rgb(252,255,0);
+
+  }
+This gives us two elements that look like this:
+
+Static sidebar and main content
+
+Note the heights of the main and sidebar elements are set using vh units. 100vh is the height of the current viewport, so setting the height of the main div to 150vh gives it a height that will be 1.5 times that of the screen.
+
+But the sidebar isn’t sticky yet! When you scroll down the page, the sidebar doesn't follow. All we need to do to fix that is to add two lines of CSS:
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+
+  }

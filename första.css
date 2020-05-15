@@ -1,0 +1,123 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main,
+.sidebar {
+  border: 3px solid #ff1dc7;
+  padding: 15px;
+  background-color: ;
+}
+
+.main {
+  width: 80%;
+  height: 500vh;
+}
+.h1 {
+font-family: "Lack";
+font-size: 50px
+color:  #ff1dc7;
+color: rgb(255,29,199);
+}
+
+
+
+.sidebar {
+  width: 10%;
+  height: 25vh;
+  color:  #ff1dc7;
+  padding: 14px 25px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Lack";
+  font-size: 16px
+
+
+  }
+
+  a:visited {
+  color:  #ff1dc7;
+  outline: none
+  }
+  a:link {
+  color:  #ff1dc7;
+  outline: none
+  }
+  a {
+outline: none;
+}
+
+
+  a:hover, a:active {
+  font-family: "Raleway-Lightitalic";
+  position: sticky;
+  outline: none
+  }
+  .container {
+      margin-left: auto;
+      margin-right: auto;
+      width:80%;
+
+  }
+  .container:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  .center {
+      text-align: left;
+      width: 100%;
+      padding-bottom: 16px;
+      margin-bottom: 4px;
+  }
+  .myfooter {
+    border-top: 2px solid #ff1dc7;
+    padding-bottom: 24px;
+  }
+
+  a:hover {
+    color: green;
+    text-decoration-none;
+    outline: none
+  }
+This gives us two elements that look like this:
+
+Static sidebar and main content
+
+Note the heights of the main and sidebar elements are set using vh units. 100vh is the height of the current viewport, so setting the height of the main div to 150vh gives it a height that will be 1.5 times that of the screen.
+
+But the sidebar isn’t sticky yet! When you scroll down the page, the sidebar doesn't follow. All we need to do to fix that is to add two lines of CSS:
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+
+  }
